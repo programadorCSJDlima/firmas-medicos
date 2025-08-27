@@ -1,12 +1,12 @@
 import { Component, ElementRef, ViewChild} from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, Route, RouterLink } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import html2canvas from 'html2canvas';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-   imports: [RouterOutlet,FormsModule],
+   imports: [RouterOutlet,FormsModule,RouterLink],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -14,7 +14,7 @@ export class HomeComponent {
 
   
   title = 'SIGNGEN';
-  nameDoc: string = 'Dra. Depool Angulo Ines Maria.';
+  nameDoc: string = 'Dr. ';
   cmpDoc: string = 'CMP.';
   rneDoc: string = 'RNE.';
   espDoc:string='Especialidad:'
@@ -81,6 +81,7 @@ export class HomeComponent {
   }
 
   //FIN DE DESCARGA DE LA FIRMA
+
 
 
 }
