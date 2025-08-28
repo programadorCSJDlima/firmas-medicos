@@ -65,9 +65,9 @@ export class HomeComponent {
         // Ahora puedes trabajar con él para descargarlo o mostrarlo
 
         // Opción 1: Descargar la imagen
-        const imgData = canvas.toDataURL('image/jpge');
+        const imgData = canvas.toDataURL('image/jpg');
         const link = document.createElement('a');
-        link.download = 'firmare.jpge';
+        link.download = 'firmare.jpg';
         link.href = imgData;
         link.click();
 
